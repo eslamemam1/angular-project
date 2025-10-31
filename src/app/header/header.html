@@ -1,5 +1,15 @@
-<p>header works!</p>
-<p>header works!</p>
-<p>header works!</p>
-<p>header works!</p>
-<p>header works!</p>
+<p class="text-blue-700 text-2xl">my age is {{ age }} years old.</p>
+<p class="text-red-600">my name is {{name}}</p>
+<p *ngIf="isTrue">this is true</p>
+<p *ngFor="let name of names">{{name}}</p>
+
+<div [ngSwitch]="car">
+  <p *ngSwitchCase="'bmw'">this is bmw</p>
+  <p *ngSwitchCase="'audi'">this is audi</p>
+  <p *ngSwitchDefault>car not found</p>
+</div>
+
+<p [ngStyle]="{color : isActive ? 'green' : 'red'}">
+  this is class binding example
+</p>
+<p [ngClass]="{'active':isActive , 'error':isError}">class</p>
