@@ -1,8 +1,6 @@
-<h1 class="text-3xl font-bold underline text-amber-500">Hello world!</h1>
-<p class="mt-4 text-lg text-gray-700">
-  Welcome to your Angular application with Tailwind CSS!
-</p>
-<app-header></app-header>
-<app-header></app-header>
-<app-header></app-header>
-<app-header></app-header>
+<nav>
+  <a routerLink="/home" routerLinkActive="active" class="p-7">Home</a>
+  <a routerLink="/about" routerLinkActive="active" class="p-7">About</a>
+  <a routerLink="/contact-us" routerLinkActive="active" class="p-7">Contact</a>
+</nav>
+<router-outlet></router-outlet>
