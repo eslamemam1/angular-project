@@ -3,6 +3,7 @@ import { Home } from './home/home';
 import { About } from './about/about';
 import { ContactUs } from './contact-us/contact-us';
 import { NotFound } from './not-found/not-found';
+import { ApexTreeView } from './apex-tree-view/apex-tree-view';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,10 @@ export const routes: Routes = [
   {
     path: 'not-found',
     component: NotFound,
+  },
+  {
+    path: 'apex-tree-view',
+    component: ApexTreeView,
   },
   {
     path: '**',

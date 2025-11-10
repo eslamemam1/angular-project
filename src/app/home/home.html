@@ -1,1 +1,19 @@
-<p>home works!</p>
+<h1>Templete Driven form</h1>
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <label for="text"> username </label>
+  <input type="text" name="username" ngModel required />
+  <label for="email"> Email </label>
+  <input type="email" name="email" ngModel required />
+  <button type="submit" [disabled]="myForm.invalid">sent data</button>
+</form>
+<br />
+<h1>Reactive form</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmitFormGroup()">
+  <label for="text"> username </label>
+  <input type="text" formControlName="username" />
+  <label for="email"> Email </label>
+  <input type="email" formControlName="email" />
+  <button type="submit">sent data</button>
+</form>
+
+<app-apex-tree-view></app-apex-tree-view>
